@@ -19,18 +19,26 @@ modules:
 
   - type: dnf
     repos:
-      copr:
-        - atim/starship
+      files:
+      - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     install:
       packages:
-        - micro
-        - starship
+        - cosmic-files
+        - distrobox
+        - fuzzel
+        - gparter
+        - mako
+        - NetworkManager-tui
+        - papirus-icon-theme
+        - terra-release
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox-langpacks
+        - 
+        - rofi-wayland 
 
   - type: default-flatpaks
     configurations:
