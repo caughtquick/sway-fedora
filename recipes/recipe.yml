@@ -6,7 +6,7 @@ name: sway-fedora
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/fedora-ostree-desktops/base-atomic
+base-image: quay.io/fedora-ostree-desktops/sway-atomic
 image-version: rawhide # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -20,12 +20,16 @@ modules:
   - type: dnf
     repos:
       files:
-      - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-##    install:
-##      packages:
-##    remove:
-##      packages:
-
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    install:
+      packages:
+        - git
+        - mako
+        - niri
+    remove:
+      packages:
+        - firefox
+        - sway
 
   - type: default-flatpaks
     configurations:
