@@ -13,7 +13,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/caughtquick/sway-fedora:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/caughtquick/fedora-atomic-niri-cq:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +21,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/caughtquick/sway-fedora:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/caughtquick/fedora-atomic-niri-cq:latest
   ```
 - Reboot again to complete the installation
   ```
