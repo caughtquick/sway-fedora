@@ -37,9 +37,11 @@ modules:
         - papirus-icon-theme
         - jetbrains-mono-fonts
         - xdg-desktop-portal-gnome
+        - xdg-desktop-portal-gtk
         - sddm
         - adw-gtk3-theme
         - grimshot
+        - gnome-themes-extra
     remove:
       packages:
         - firefox
@@ -52,6 +54,7 @@ modules:
     install:
       packages:
         - ghostty
+        - nwg-look
 
   - type: default-flatpaks
     configurations:
