@@ -31,7 +31,6 @@ modules:
         - chezmoi
         - xfce-polkit
         - swaylock
-        - swaybg
         - swayidle
         - papirus-icon-theme
         - jetbrains-mono-fonts
@@ -56,6 +55,7 @@ modules:
       packages:
         - ghostty
         - nwg-look
+        - swww
 
   - type: default-flatpaks
     configurations:
