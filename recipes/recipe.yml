@@ -48,7 +48,6 @@ modules:
         - sway
         - pavucontrol
         - wofi
-        - lxpolkit
 
   - type: dnf
     install:
