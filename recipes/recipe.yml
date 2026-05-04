@@ -55,6 +55,12 @@ modules:
         - ghostty
         - nwg-look
         - swww
+        - terra-release-multimedia
+  - type: dnf
+    install:
+      packages:
+        - libfreeaptx
+      
 
   - type: default-flatpaks
     configurations:
